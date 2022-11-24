@@ -1,0 +1,19 @@
+feb icons
+<html></html>
+
+<head></head>
+
+<title></title>
+
+<style></style>
+
+<nonscript></nonscript>
+
+
+<tagname attribute="value"></tagname>
+
+<tagname attribute="value" />
+
+png'portable network g
+../=double dot is denotes as one step back from the one folder
+folder name/image name.png/jpg

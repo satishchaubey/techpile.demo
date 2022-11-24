@@ -1,0 +1,29 @@
+C program to print largest of two numbers using conditional operator
+C program to print smallest of two numbers using conditional operator
+C program to print largest of three numbers using conditional operator
+C program to print smallest of three numbers using conditional operator
+C program to print enter number is even number or odd number using conditional operator
+C program to print check leap year or common year using Conditional operator
+C program to check alphabet or no alphabet using conditional operator
+C program to check alphabet or no alphabet using ASCII value and conditional operator
+C program to check vowel or consonant using conditional operator
+C program to check vowel or consonant using ASCII value and conditional operator
+C program to check alphabet, digit or special symbal using conditional operator
+C program to check alphabet, digit or special symbal using ASCII value and conditional operator
+C program to check enter alphabet is upper case or lower case using conditional operator
+C program to check enter alphabet is upper case or lower case using ASCII value and conditional operator
+C program to check the given integer is positive,negative or zero using and conditional operator
+C program to check enter week number and print day of week using conditional operator
+C program to check print number of days in month using conditional operator
+C program to check print number of days in month using or operator and conditional operator
+C program to check print number of days in month and month name using conditional operator
+C program to check print check triangle validity when angles are given using conditional operator.
+C program to check valid triangle when sides are given using logical AND operator and conditional operator
+C program to check isosceles,scalene or equilateral triangle when sides are given using conditional operator
+C program to check calculate profit or loss using conditional operator
+C program to enter student marks and find percentage and grade using conditional operator
+
+
+
+
+

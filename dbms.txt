@@ -1,0 +1,132 @@
+1.	Select all record stored in table customers.
+
+  select * from customers;
+======================================================================================================================================
+2.	Select only first_name, last_name, email_id of all customers
+
+ select first_name,last_name,email_id from customers;
+======================================================================================================================================
+
+3.	Select all records of those customers who has no mobile number,
+
+  select * from customers where mobile_no is null;
+======================================================================================================================================
+
+4.	Select all customer records in ascending order of first_name and last_name.
+
+  select * from customers order by first_name,last_name asc;
+======================================================================================================================================
+
+5.	Select those customer records who registered in october month
+
+    select * from customers where reg_date like '_____10%';
+
+======================================================================================================================================
+
+1.	Select total items sold February month
+  select sum(order_items) from orders where order_date like'_____02%';
+======================================================================================================================================
+
+2.	Select total purchase amount of  Priya dutt
+
+  select sum(order_total) from orders where cust_id='priya001@gmail.com';
+======================================================================================================================================
+
+3.	Select all order details where total amount is greater than 1000
+
+  select * from orders where order_total>=1000;
+======================================================================================================================================
+
+4.	Select all order details where purchase amount is within 500 to 1500
+
+  select * from orders where order_total between 500 and 1500;
+======================================================================================================================================
+
+5.	Select all order details where purchase amount is within 500 to 1500 of Priya, Rohan and Siya
+
+  select * from orders where order_total between 500 and 1500 and cust_id='priya001@gmail.com' 
+  or cust_id='981rohankr@gmail.com' or cust_id='mukharjeeak@gmail.com';
+======================================================================================================================================
+
+6.	Select order details of all customers with one more column named order_type .
+If total purchase items is less than 3 then show less quantity otherwise show good quantity
+======================================================================================================================================
+
+7.	Select orders of all customers except priya
+  select * from orders where cust_id<>'priya001@gmail.com';
+
+======================================================================================================================================
+
+joining:it is used to select records from two or more tables based on a common column.BY using joining we can select a virtual table which contains column from more than one table.
+
+to perform joining on two or more tables each table must should have a common column.
+
+there are mainly 4 types of joining in SQL:-
+
+1.Inner join
+2.Left join
+3.Right Join
+4.Full outer join
+
+1.Inner join:-
+
+Joining returns cartesian product of table,on cartesian product result,applied joining is used 
+
+Inner join returns only common rows of both tables.If you are using inner join on two tables only those records will return which is present in first table and second table also .
+
+
+2.Left join:-
+
+Left join, it returns common records of both table and includes all remaining records of left table.that means in left join ,you will get all
+records of left table and only common records of the right table (second table).
+
+
+3.Right Join:-
+
+Right join returns common records of both tables and includes all remainning records of right table,that is present in right table but not present in left table(first table).
+
+
+so right join returns all records of the second table and only common records of the first table.
+
+4.Full outer join:-
+
+Full outer join combines all records present in first and second  tables.
+
+
+GROUP BY:-
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

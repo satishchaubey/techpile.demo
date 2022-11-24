@@ -1,0 +1,8 @@
+&char;
+&copy;
+&reg;
+&nbsp;
+&larr;
+&rarr;
+&uarr;
+&darr;

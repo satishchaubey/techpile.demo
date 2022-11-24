@@ -1,0 +1,60 @@
+accept= file extension
+
+or
+
+image/* || video/* || audio/*09:52 29-09-2022
+
+in form we use attribute named enctype="txt/plain || multipart/form-data"
+if we use form me method ka use krte h to usme hm enctype ka use krte h kyuki iske dvara hm multiple  file bhejna chahte h
+to iska use krte h
+
+
+css
+syntax
+------
+<style>
+selector
+{
+
+property:value;property:value;
+or
+property:value;
+property:value;
+n times;
+}
+</style>
+
+
+
+selector
+========
+=>
+selector is used to select HTML element to apply CSS
+
+types of selector
+------------------
+
+1.Tag selector
+2.id selector
+3.class selector
+4.Group selector
+5.command selector
+6.Parent child selector
+7.universal selector
+ETC;
+
+
+eg:-
+
+	<style>
+		h1
+		{
+			color:red;
+			background-color:green;
+			
+			
+				
+		}
+	</style>
+
+
