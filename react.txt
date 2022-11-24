@@ -1,0 +1,977 @@
+Welcome to the session of JS Family
+===================================
+
+what is full stack development?
+1.(velocity),(variety),(volume=matra):big data(dynamic)
+dynamic,
+front end development
+backend development
+database management;
+
+vs code
+node
+postman
+mongodb
+xampp
+laragon
+dia
+compass Mongodb
+===============================================================
+
+date:16-11-2022
+
+$ linux or unix symbols
+echo hello world
+
+:> some basic command of Linux Terminal:
+========================================
+
+all terminal common name:repl
+
+>>> python (repl:read evaluate print loop)
+> cmd()
+
+1.  whoami : who is the Admin user of system.
+
+2.  clear :to clear the screen
+
+3.  pwd : print working directory.
+
+4.  mkdir : used to make folders
+
+5.  ls : used to show list of files and folders(normal)
+
+6.  ls -lart: used to show complete details about files and folders all info,who made,when made,why made....etc 
+
+			generally any files or folder has three permission
+
+			1.user
+`			2.group
+			3.owner
+
+	403:you dont have permission to show but owner can see;
+	+:on
+	-:off
+
+	permission scopes :
+
+	1.(r)read
+	2.(w)write
+	3.(x)Execute
+
+	status:  r+w+x-
+
+	status:  r+w+r
+	status:  d(directory)
+	
+	file: d-r-w+x-
+
+	folder: d+r+w+x
+
+7. touch : used to create file with or without extensions.(it is used to create empty files)
+
+	single use: touch index.html
+	multiple files:touch file1 file2 file3 file 4...........
+
+8. without open any file we use this type of command
+
+	 echo:used to print anything on console screen
+
+file handling  
+**************
+
+1.write anything on the file without directory accessing it.
+	
+	echo any message or code or string > index.html
+
+
+modes of file 
+
+	1. overwrite mode echo something > abc.txt
+	(old data replaced by new data)
+
+	2.append mode: echo something >> abc.txt
+	(old data and new data will be added)
+
+9. cat: content at,command use,you can directly read the file,without directly opening it.
+
+	Rule:you must have r+ permission.
+	if you dont have permission then,access Denied No Sufficient Permission.
+
+10.moving inside/outside of the directory
+
+	cd path-name/ : inside
+		cd ../   :outside
+	./ or current
+	../or parent
+11. rm -r <file-name> :this will delete all files and folder
+shift+delete (as like)
+
+	file:rm -r about.html
+	folder:rm -r folder name
+
+	how to pass Range:-
+===========================
+	
+	command {start..end}
+==========================================================================
+
+
+how to change drive:
+
+cd x:hit enter
+
+x is drive name c: or e: or d:
+
+=================================================================================
+
+chmod : command is used to change the permission code of user -->group ---->owner or vice-verca
+
+
+*********************
+super user :su 
+*********************
+
+super user mode : 777 permission
+
+chmod <mode-number or permission number > <path>
+chmod 777
+
+
+
+1. git pull or fetch -all or clone =>download
+
+
+2.git push or upstream => upload
+
+===========================================================================================================================================================
+date:-17-11-2022
+
+Ques:- What is git?
+
+sol:- git is vcs,scm,vcm
+
+scm:-source code management
+
+vcs:-version(updated code) control system
+
+vcm:- version control mechanism.
+
+version:-peice of code that changes daily.
+
+==============================================
+
+tool other than git:-
+**************************
+
+we can use SVN(SUb Version) or GIT:-
+
+SVN(tortoise)
+
+
+Difference b/w SVN and GIT:-
+
+SVN(sub-version);
+
+git:-git scm tool;
+--------------------------
+svn is centralised.
+git is distributed.
+----------------------------
+svn old conventions.
+git modern conventions.
+------------------------
+common command:-
+*******************
+
+git status;
+svn status;
+------------
+git checkout
+svn checkout
+---------------
+git something
+svn something
+---------------
+note:-svn and git both uses same type of command.
+
+$ <git or svn> <command>
+
+commands of git:-
+*************************
+
+how to intialise the git:-
+-----------------------------
+
+tracking/recording/monitoring/snapshot of file
+************************************************
+
+1.is possible at stage only.
+
+2. directory :folder
+repository:folder
+
+git init:command
+
+git status:command
+
+
+===========================================================================================================================================================
+
+important key points about Git hub
+******************************************
+
+http://github.com/satishchaubey/repo-name.git
+-------------------------------
+.git me jo repo ki bnti h vhi h.
+----------------------------------------------------
+
+git ka jo url hota h vhi upr likha h.
+
+
+important information Related to git repo
+**********************************************
+
+1.Every git repo has its permission.
+2.Every git repo will have readme file.
+3.Every git repo has visibility status.
+
+	a.Public repo:-
+					any body can see,and any body can download(clone->origin),
+					or any body can fork (clone->upstream) ,and any body can watch.
+
+	b.private:-
+
+
+
+4.Every git repo may have or may not have License.
+5.Every repo will have its own owner and its own branch by default branch name is master and aftery August-2021 Master name was changed
+	to main in github.
+
+.git ignore likha rhta h
+mern pd rhe ho to node choose krna pdta h 
+
+
+
+difference bitween clone and  git fork.
+---------------------------------------
+
+git clone code cloud to local download.
+
+private and public repo.
+
+
+git fork code one github account ---->2nd git account -->download.
+
+public repo.
+
+*****************************************
+in interview asked questions.		<19-11-2022> kal ka rouph me h >
+--------------------------------------------------------------------------------------------------------------------------------------
+======================================================================================================================================
+20-11-2022
+***********
+command of the global:-
+
+-----------------------
+
+How to Add and Show Global Author Username and Email:-
+********************************************************
+
+$ git config --global user.name
+$ git config --global User.email
+
+********************************************************
+
+or locally:-
+************
+
+$ git config --local user.name
+$ git config --local User.email
+***********************************
+
+Note:-if you supply the value,then set or if not it will show.
+--------------------------------------------------------------
+
+Note:-for string value :=>if space seperated string then in command line "" is mendatory.
+
+Every space wala sentence should be inside "" key ander rhega.
+																important.
+========================================================================================== 
+
+Adding author/owner information globally:-
+*****************************************
+
+$ git config --global user.name "satish"
+$ git config --global User.email "satish@gmail.com"
+-----------------------------------------------------------------------------------------------
+
+Adding author/owner information locally:-
+*****************************************
+
+$ git config --local user.name "satish"
+$ git config --local User.email "satish@gmail.com"
+
+===============================================================================================
+
+if already added author information the we will remove it.
+************************************************************
+
+in windows => credential manager
+
+1.web credential 
+2.windows credential 
+
+All server based credential (userid + password ) will be stored here only.
+----------------------------------------------------------------------------
+
+How to create workspace in git:-
+*********************************
+
+work-space:- it is a folder where,all your code is kept and you are current working.
+(cwd) - current working directory.
+
+cwd is only called workspace.
+
+======================================================================================
+
+$ mkdir foldername/
+
+$ cd foldername
+
+$ pwd -->path/to/cwd
+
+$ ls -lart
+or
+$ ls
+***********************************************************
+Kaise htaye Master ko agr lga rh gya to hm :- ( rm -r .git )
+***********************************************************
+
+how to initialse git at local:-
+*******************************
+
+$ git init :-(master lgane ke liye use krte h.):->
+
+====================================================================
+
+how to see git branch name at local 
+************************************
+
+$ git config --list --show-origin	:- full path dikhega
+or
+$ git config --list	:-
+
+list:-options or flag or conditions or arguments.
+
+tin trike se repo chlti h 
+1.locally
+2.system
+3.globally
+
+*************************************************************************************************
+
+how to change ,the init.defaultbranch name from master to main.
+
+*************************************************************************************************
+
+1.linux or terminal
+
+	cmd =>launch =>administrator
+
+	-----------------------------
+
+	change the permission using command 
+
+	chmod 777 path/to/folder
+
+----------------------------------------------
+
+	windows:-
+	
+	powershell or cmd => launch =>administrator
+	
+	cd etc/
+
+	chmod 777 path/to/folder
+
+	when ,r+w+x+permission
+
+	properties > security > permission >edit > allow permission
+
+	full access [tick]
+
+	read [tick]
+
+	execute [tick]
+
+	write [tick]
+
+	apply > ok > ok
+
+	chmod 777 path/to/folder
+
+	$ git config --system init.defaultbranch "main"
+************************************************************************************
+
+note:- git init is done when you are sure that you are going to create some file.
+
+Ask Two main Question With yourself:-
+***************************************
+
+1.is this my correct cwd?
+	if not then run cd command and move to correct.
+
+2.make sure you have few files?
+	note:: no commit will be allowed without any file.
+
+How to create empty file 
+************************
+
+$ touch index.html about.html gallery.html
+
+$ ls -lart
+or 
+$ ls
+
+******************************************************************************************
+
+write some code.......
+
+************************
+
+how to tracking of files
+**************************
+
+or 
+
+how to add files to stage
+****************************
+
+$ git add filename
+
+for entire folder 
+******************
+
+$ git add ./
+
+*******************
+how to check tracking 
+*******************************
+
+$ git status
+
+note: you can run git status at any mode,any situation,any way and any time.
+
+$ git init
+note:: you have to git init,for first time,you have to convert .
+
+cwd => myproject (workspace) => master repository
+
+note:: local git repo
+
+Details about .git folder
+**************************
+
+It is main hidden folder.
+
+$ ls 
+
+$ cd .git
+
+$ git branch
+
+server pe lart ni chlega :=>-lart
+
+******************************************
+
+head=current commit main branch
+
+**********************************************************************************************
+
+Note:- branch ,is concept which is created when users are working together.
+
+developer
+master or main
+tester
+design
+
+*************************************************************************************************
+
+how to see branch list
+*************************
+
+$ git branch
+
+dev
+
+master or main
+(*) tester <--------- current branch name
+design
+
+note::$ -------------------->(main) current branch name.
+
+branch of two types
+***********************
+
+1.local:$ git branch(command)
+
+2.origin(github or cloud) :$ git branch --all(command)
+
+How the local branch look like:-
+*********************************
+
+
+dev
+master or main
+(*) tester <--------- current branch name
+design
+-----------------output----------------
+
+How the server branch look like:-
+*********************************
+$ git branch --all
+----------------output-----------
+
+dev
+master or main
+(*) tester <--------- current branch name
+design
+refs/remotes/origin/main
+refs/remotes/origin/design
+refs/remotes/origin/tester
+refs/remotes/origin/production
+refs/remotes/origin/dev
+refs/remotes/origin/release
+refs/remotes/origin/manager
+
+-------output----------------------
+
+==========================================================================================================================================================
+**********************************************************************************************************************************************************
+21-11-2022
+
+
+Note:- Branch can not be created until first commit or first pull- 
+(or clone).
+
+first commit ->saving local to local .git repository file | ----> stage -------> final commit | .git repo.
+As soon as,Automatically,commit your recent commit will become HEAD of that branch.
+
+For first commit file should be at,stage
+
+*******************************************
+
+$ git add filename/
+&
+$ git add .
+
+
+How to any file to cache memory or unstage
+******************************************
+
+1.$ rm -r filename or foldername
+
+2.$ git rm --cached <filename> : unstage => NO tracking
+
+How to track modified :
+***********************
+
+$ git status
+s: status
+s:stage
+
+Note: once you are sure and you are done with your task.
+
+***********************************************************
+How to commit :
+*************************************************************
+
+After modified stage you have two options
+
+1.unstage
+2.commit
+
+$ git commit -m "added,Changes in index and about file" : this msg will be your commit message. And after you will get,commit Id : 40Bit
+
+Once commit
+************
+
+1.Head is generate
+2.Commit Id is generated 
+3.file will automatically unstage --->untracked mode
+
+During commit 
+*****************
+
+versoning happens
+and mode is changed by git.
+
+What happens during versoning
+*******************************
+
+table: date and time 
+author information : commit id ,message also code
+
+Add[+] insertions : green
+del[-] deletion : red
+   [0] unchanged : default white.
+
+
+
+NC :> No,changes.
+$ git status 
+$ nothing to commit working tree clean.
+
+How to see commit
+*******************
+
+$ git log
+
+commit Id 
+Head information:
+Author Information:
+log ENd :q <-important>
+
+or ctrl + c
+
+*****************************************************
+How to see code of commit
+**************************
+$ git diff <branchname>
+
+or
+
+$ git diff <commitID>
+
+if branch same you want to code of any other commit you will be in detch mode.
+
+New branch for older commit created =>
+detached HEAD Branch
+
+HOW to create branch:>
+**********************
+
+$ git branch <branchname>
+
+How to move from one branch to another branch
+************************************************
+
+$ git checkout branchname 
+
+or
+
+$ git checkout commitID
+
+HOW TO DETELE BRANCH
+********************
+
+NOte:- Deleting the branch will delete all commits and impossible to undo.
+
+$ git branch --delete <branchname>
+
+How to final checkout
+***********************
+
+$ git checkout <commitId or branchname>
+
+Any help for command :
+*********************
+git help branch
+***********************************************
+=============================================================================================================================================================
+23-11-2022
+*************
+
+How to final chackout
+*********************
+
+$ git checkout <commitId or branchname>
+
+1) Difference b/w detached HEAD and branch
+	detached HEAD:- recent commit me kiya gya checkout head sey detach ho jata h,and detached head undo: checkout to any commit branch.
+
+
+
+
+2) What is HEAD.:- current branch me kiya gya latest commit or recent commit kehlata ,head
+
+
+*****************************************************
+
+How to get deleted files
+*************************
+
+$ git status
+
+$ git diff
+
+$ git log =>commitid or recent-branch-of-commit
+
+$ git checkout commitId
+or
+$ git checkout branch
+or
+$ git checkout .in current branch.;
+
+********************************************************
+
+How to git push:
+****************
+
+1.What is origin : main cloud server at github,gitlab,bitbucket or bitkepeer or heruko(salesforce company).
+
+2. origin is recogined as ,url.
+
+	1. https : https//github.com/username/repo.git
+
+`	2. ssh : (secure shell)
+
+	What happens in ssh (putty)
+
+	3. git cli*(Administrator)
+
+What happens in ssh (PuTTY).
+
+1.connection is set up b/w direct client to server using shell or terminal .There are two ways of connecting server using ssh.
+********************************************************************************************************************************
+
+=> Using credential of IP : cmd => ping url without https/http
+	for eg: cmd => ping google.com
+	for eg: cmd => ping facebook.com
+	for eg: cmd => ping gmail.com
+
+or 
+
+	https://dnslookup.online/
+	dns lookup
+	dns checker 
+	mstoolbox
+	
+	all information related to server and IP can be found using above website which will include ,DNS record ,DNS server network IP ,hosting 
+	server ,nameserver ....etc.(ipv6 network)
+
+	2. by default port :
+	--------------------
+	FTP protocol : 21
+
+	sftp protocol : 22
+
+	Note : if port not provirded , you have to default port for public server.
+
+	Note :: if network is private , then there may a chance that server may use there own port number .
+			for connection,you must connect to private port .
+	public smtp server :25
+	private server : 2096 <private port>
+
+	protocol => port assign => IANA
+
+	private port will be given server admin.
+
+	3. username : access from server admin.
+	4.password : access from server admin.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+2nd method :-
+
+	1.using ssh keys or 
+		1.public key : automatically exchange b/w client and server.
+		2.private key : username and password (private key).
+
+		install : putty --> open puttygen
+
+		generate token 
+				---> shake mouse cursor.
+				---> shaking(algorithm )+ machine(macID)=>
+					
+				very very long
+					1. public => rsa
+					2.private => rsa
+
+	client shell<----------------------------------> server shell
+
+	[data]-------------------------------------> [target]
+
+		---------------------> Encrypt -----------------------------> public key
+
+		<--------------------------- private key ---------------------
+
+	How to add shh key to git repo :-
+	*************************************
+
+	1. avater icon > setting > under repository > development
+		
+		ssh key => Add ssh key and ADD your public-rsa key add.
+
+		 
+
+
+
+	2. Token :-
+
+	***********		
+	if you generate ,personalised token then instead of adding username and password (private key) you can one time add
+		, token and it will be saved for 30 days and you can directy commit to the server.
+
+	if you save this token it will stored in,credential manager.	
+	
+	1.how to set token.
+	********************
+
+	1.git hub > avatar icon > setting > developer stting > personalised 
+		token > classic token > generate token 
+		1.title 
+		2.expiry
+				7 days
+				30 days
+				90 days 
+
+				NOte : This expiry is by-default 30days 		
+						after that is expires most companies ,are going to set expiry according to there ,sprint .
+
+				set all the permission:
+				
+				1.shh key 
+				2. read write ,commits ,deployment ,allow sharing ,..... branch creation.
+
+			generate 
+				1.please copy at once because this token will be hidden as soon as you refresh ,hence keep it very detele and regenerate.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+How to push code to server or origin:-
+***************************************
+
+1. normal push:- 
+****************
+How to normally push the code:-
+*******************************
+
+$ you to commit and you to check out to the branch for push
+
+$ git commit -m "something"
+
+$ git checkout to branch.
+
+$ git push origin <branch>
+
+
+-----------------------------------------------------------------------------
+
+
+2.force push:-how to force push
+*****************************
+
+$ git push -f origin <branch-name>
+
+******************************
+Eg:
+---
+
+1.dev 
+2. master
+3.tester
+--------------------------
+
+if tester push
+***************
+
+$ git push -f origin tester
+
+If master push
+***************
+
+$ git push -f origin master
+
+if dev push
+***************
+
+$ git push -f origin dev
+
+---------------------------------------------------------
+
+BEfore push your origin must be ready 
+**************************************
+
+origin=> url
+
+system client 
+connection
+server (remotly)
+$ git remote -v
+	1.mode push 
+	2.fetch push
+
+
+How to setup origin 
+********************
+
+$ git remote add origin <repo-url>
+
+to remove
+
+$ git remote remove origin
+or
+$ git r
+
+Again check remote or origin version
+*************************************
+
+$ git remote -v
+
+url=>https://github.com/satishchaubey/techpile.demo.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
